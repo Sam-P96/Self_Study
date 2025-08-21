@@ -1,14 +1,3 @@
-print("This is a Celsius Fahrenheit converter")
-program_select = input("""Please enter \"CF\" convert Celsius to Fahrenheit
-Or enter \"FC\" convert Fahrenheit to Celsius""")
-
-if program_select == "CF":
-    celsius_input = int(input("Please enter the temperature in celsius:"))
-    F_C = (celsius_input * 9 / 5) + 32
-    print("The temperature in Fahrenheit is: {}".format(F_C))
-elif program_select == "FC":
-    fahrenheit_input = int(input("Please enter the temperature in fahrenheit:"))
-    C_F = (fahrenheit_input - 32) * 5/9
-    print("The temperature in Celsius is: {}".format(C_F))
-
-#You can use float(input("....")) instead in the future so there's an option for decimal numbers
+whetting_your_appetite = "Python is an easy to learn, powerful programming language. It has efficient high level data structures and a simple but effective approach to object oriented programming. This tutorial introduces the reader informally to the basic concepts and features of the Python language and system. For a description of standard objects and modules..."
+word_count = len(whetting_your_appetite.split())
+print(word_count)
