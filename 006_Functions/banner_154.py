@@ -1,4 +1,4 @@
-def banner_text(text, screen_width=80):
+def banner_text(text = " ", screen_width = 80):
     # screen_width = y # I originally used this, but you can just change it up there
     if len(text) > screen_width - 4:
         raise ValueError("String {0} is larger than specified width {1}"
@@ -10,9 +10,13 @@ def banner_text(text, screen_width=80):
         print(output_string)
 
 
-banner_text("*")
-banner_text("BITCH")
-banner_text("I SAID WHAT I SAID something something paint the town red")
-banner_text("something something instead...")
-banner_text("*")
+banner_text("*", 60)
+banner_text("BITCH", 60)
+banner_text("I SAID WHAT I SAID", 60)
+banner_text(screen_width = 60)
+banner_text("something something instead...", 60)
+banner_text("*", 60)
 
+# We added default arguments for the str, and also learn to use keyword argument (line 16)
+# Next time we will learn to document our functions before writing them
+# This is helpful cus now you know what you are working towards
