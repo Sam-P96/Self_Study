@@ -1,4 +1,14 @@
 def banner_text(text = " ", screen_width = 80):
+    """
+    Prints out different lines of a banner created with `*`.
+
+    :param text: Prints Enter `str` to print inside the banner.
+        Prints out " " by default if left empty.
+    :param screen_width: The width of the banner by character number.
+        The width is set to 80 by default if left empty.
+    :return:
+        None
+    """
     # screen_width = y # I originally used this, but you can just change it up there
     if len(text) > screen_width - 4:
         raise ValueError("String {0} is larger than specified width {1}"
