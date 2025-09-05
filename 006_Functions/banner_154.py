@@ -1,11 +1,13 @@
-def banner_text(text = " ", screen_width = 80):
+def banner_text(text: str = " ", screen_width: int = 80) -> None:
     """
-    Prints out different lines of a banner created with `*`.
+    Prints out different lines of a banner created with `** on each sides`.
 
-    :param text: Prints Enter `str` to print inside the banner.
+    :param text: Prints str inside the banner.
+        An asterisk (*) will result in a row of asterisks.
         Prints out " " by default if left empty.
     :param screen_width: The width of the banner by character number.
         The width is set to 80 by default if left empty.
+    :raises ValueError: if the supplied str is too long to fit the banner.
     :return:
         None
     """
