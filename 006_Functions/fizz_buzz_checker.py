@@ -19,11 +19,13 @@ def fizz_buzz(x: int) -> str:
 for i in range(1,101):
     # print(fizz_buzz(i))
     if i % 2 == 0:
+        # p_g = fizz_buzz(i)
         p_g = input("Your Turn: ")
         if fizz_buzz(i) == p_g.casefold():
             continue
         else:
             print("YOU LOSE")
+            print(f"Correct answer was {fizz_buzz(i)}!")
             break
     else:
         print(fizz_buzz(i))

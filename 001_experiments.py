@@ -1,17 +1,12 @@
-def fizz_buzz(x: int) -> str:
-    """
-    the number entered is checked if it is divisible by both 3 & 5,
-    or 5 or 3 alone, or neither.
-    :param x: the number being checked
-    :return: the corresponding answer or the number back out if
-    it is neither divisible by 3 nor 5.
-    """
-    if x % 3 == 0 and x % 5 == 0:
-        result = "fizz buzz"
-    elif x % 5 == 0:
-        result = "buzz"
-    elif x % 3 == 0:
-        result = "fizz"
-    else:
-        result = str(x)
+def factorial(n):
+    if n <= 1:
+        return 1
+    result = 2
+    for x in range(2 + 1, n + 1):
+        result *= x
+        print(x)
+        print(result)
+
     return result
+
+factorial(3)
