@@ -13,6 +13,8 @@ for i in range(1, len(available_parts) + 1):
 current_choice = "-"
 computer_parts = [] #creat an empty list
 
+available_parts.sort()
+
 while current_choice != '0':
     if current_choice in valid_choices:
         index = int(current_choice) - 1
