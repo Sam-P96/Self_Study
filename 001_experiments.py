@@ -1,12 +1,11 @@
-def factorial(n):
-    if n <= 1:
-        return 1
-    result = 2
-    for x in range(2 + 1, n + 1):
-        result *= x
-        print(x)
-        print(result)
+# We need an empty dictionary, to store and display the letter frequencies.
+word_count = {}
 
-    return result
+# Text string
+text = "Later in the course, you'll see how to use the collections Counter class."
 
-factorial(3)
+# Your code goes here ...
+
+# Printing the dictionary
+for letter, count in sorted(word_count.items()):
+    print(letter, count)
