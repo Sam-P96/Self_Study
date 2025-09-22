@@ -23,10 +23,11 @@ def banner_text(text: str = " ", screen_width: int = 80) -> None:
 
 
 banner_text("*", 60)
-banner_text("BITCH", 60)
-banner_text("I SAID WHAT I SAID", 60)
+banner_text("! ! ! EMERGENCY DISTRESS SIGNAL ! ! !", 60)
+banner_text("FROM:", 60)
+banner_text("Nepal, Tribhuvan International Airport", 60)
 banner_text(screen_width = 60)
-banner_text("something something instead...", 60)
+banner_text("Location: [Longitude, Latitude] NW 340°", 60)
 banner_text("*", 60)
 
 # We added default arguments for the str, and also learn to use keyword argument (line 16)
